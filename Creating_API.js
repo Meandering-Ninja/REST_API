@@ -2,7 +2,7 @@ const express = require('express');
 const server = express();
 server.use(express.json());
 const fs = require('fs');
-const data = JSON.parse(fs.readFileSync('products.json','utf-8'));
+const data = JSON.parse(fs.readFileSync('products.json','utf-8'));   //Product.json is my own JSON file having data
 const products = data.products;
 
 //API -C-R-U-D
